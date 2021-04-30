@@ -64,26 +64,26 @@
       
          <div class = "px-4 py-2 lg:pb-3 mt-2 text-xl font-bold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 lg:mt-0 lg:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"x-data="{open: false}">
         
-            <a x-on:click.prevent="open = true" class="" href="">Send Us a Text</a>
+            <a target = "_blank"  x-on:click.prevent="open = true" class="" href="">Send us a Text</a>
         
       
         <div x-show.transition.opacity="open" class="p-4 fixed flex justify-center items-center inset-0 bg-black text-black bg-opacity-75 z-50">
                 <form x-on:click.away="open = false" x-show.transition="open" class="max-w-3xl max-h-full h-auto p-8 py-10 overflow-auto bg-white border-b-2 border-gray-300 rounded-lg shadow-2xl px-7 mt-16 md:mt-0 md:w-2/5">
                         <h3 class="mb-6 text-2xl font-medium text-black text-center">Send us a Text</h3>
                         <div class="block mb-4 border border-gray-200 rounded-lg">
-                            <input type="text" name="first-name" id="1-first-name" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="First Name">
+                            <input type="text" name="first-name" id="2-first-name" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="First Name">
                         </div>
                         <div class="block mb-4 border border-gray-200 rounded-lg">
-                            <input type="text" name="last-name" id="1-last-name" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="Last Name">
+                            <input type="text" name="last-name" id="2-last-name" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="Last Name">
                         </div>
                         <div class="block mb-4 border border-gray-200 rounded-lg">
-                            <input type="text" name="phone-number" id="1-phone-number" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="Phone Number">
+                            <input type="text" name="phone-number" id="2-phone-number" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="Phone Number">
                         </div>
                         <div class="block mb-4 border border-gray-200 rounded-lg">
-                            <textarea name="message" cols="5" id="1-message" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="What is your message?"></textarea>
+                            <textarea name="message" cols="5" id="2-message" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="What is your message?"></textarea>
                         </div>
                         <div class="block">
-                            <button type="button" onclick= "send_sms(1, 'Clean-Cut-Painting')" class="w-full px-3 py-4 font-bold font-lg text-white  bg-gray-900  rounded-lg">Send</button>
+                        <button type="button"  onclick= "send_sms(2, 'Clean-Cut-Painting')" class="w-full px-3 py-4 font-bold font-lg text-white  bg-gray-900  rounded-lg">Send</button> 
                         </div>
                         
     
@@ -104,7 +104,7 @@
     <div class="flex justify-end p-8 bg-gray-900 lg:py-32 lg:px-16 lg:pl-10 lg:w-1/2">
         <div class="flex flex-col items-center lg:items-start justify-center w-full lg:max-w-lg">
             <h5 class="mb-3 text-3xl text-center font-extrabold  leading-none sm:text-4xl lg:text-7xl text-center lg:text-left">
-                Clean Cut Painting &amp; Finishing LLC
+                Clean Cut Painting &amp; Finishing LLC  
             </h5>
             
             <p class="py-5 mb-5 lg:text-xl text-center lg:text-left">
@@ -113,26 +113,26 @@
             
             <div class="flex text-center justify-center items-center" x-data="{open: false}">
                 <button type="button" x-on:click.prevent="open = true" class="inline-flex items-center justify-center h-24 px-6 lg:mr-6 tracking-wide transition duration-200 rounded-lg focus:shadow-outline focus:outline-none  bg-gray-200 text-black hover:bg-white hover:text-gray-400 ">
-                    <h5 class="text-3xl font-extrabold">Send us a text</h5> 
+                    <h5 class="text-3xl font-extrabold">Send us a Text</h5> 
                 </button>
                 <div x-show.transition.opacity="open" class="p-4 fixed flex justify-center items-center inset-0 bg-black bg-opacity-75 z-50">
                     <form x-on:click.away="open = false" x-show.transition="open" class=" text-black max-w-3xl max-h-full h-auto p-8 py-10 overflow-auto bg-white border-b-2 border-gray-300 rounded-lg shadow-2xl px-7 mt-16 md:mt-0 md:w-2/5">
                             <h3 class="mb-6 text-2xl font-medium text-black text-center">Send us a Text</h3>
-                            <div class="block mb-4 border border-gray-200 rounded-lg">
-                                <input type="text" name="first-name" id="2-first-name" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="First Name">
-                            </div>
-                            <div class="block mb-4 border border-gray-200 rounded-lg">
-                                <input type="text" name="last-name" id="2-last-name" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="Last Name">
-                            </div>
-                            <div class="block mb-4 border border-gray-200 rounded-lg">
-                                <input type="text" name="phone-number" id="2-phone-number" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="Phone Number">
-                            </div>
-                            <div class="block mb-4 border border-gray-200 rounded-lg">
-                                <textarea name="message" cols="5" id="2-message" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="What is your message?"></textarea>
-                            </div>
-                            <div class="block">
-                                <button type="button" onclick= "send_sms(2, 'Clean-Cut-Painting')" id= "send" class="w-full px-3 py-4 font-bold font-lg text-white  bg-gray-900  rounded-lg">Send</button>
-                            </div>
+                        <div class="block mb-4 border border-gray-200 rounded-lg">
+                            <input type="text" name="first-name" id="1-first-name" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="First Name">
+                        </div>
+                        <div class="block mb-4 border border-gray-200 rounded-lg">
+                            <input type="text" name="last-name" id="1-last-name" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="Last Name">
+                        </div>
+                        <div class="block mb-4 border border-gray-200 rounded-lg">
+                            <input type="text" name="phone-number" id="1-phone-number" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="Phone Number">
+                        </div>
+                        <div class="block mb-4 border border-gray-200 rounded-lg">
+                            <textarea name="message" cols="5" id="1-message" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="What is your message?"></textarea>
+                        </div>
+                        <div class="block">
+                        <button type="button"  onclick= "send_sms(1, 'Clean-Cut-Painting')" class="w-full px-3 py-4 font-bold font-lg text-white  bg-gray-900  rounded-lg">Send</button> 
+                        </div>
                             
      
                     </form>
@@ -347,15 +347,39 @@
                     
                 
                 
-                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/J9X9T1E1CID5YE16VV11YXO3SRTDA9PI2ZPFK28N.jpeg" alt="photo of past work" loading="lazy" ></div>
-                    
-                
-                
                     <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/B1OCOCM2QFL8TENZ5OFNYNSH89RMRND01CI36EC8.jpeg" alt="photo of past work" loading="lazy" ></div>
                     
                 
                 
                     <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/KRDXQWAMDFUCY1UIS1A7GR1WSX53KMPESRVUCI9L.jpeg" alt="photo of past work" loading="lazy" ></div>
+                    
+                
+                
+                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/BED9PYZQ5EVB05TRJ8BW4R5T9TN888M4Z8QVYSVA.jpeg" alt="photo of past work" loading="lazy" ></div>
+                    
+                
+                
+                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/V8XPTP0VR9OWTYKC5MU66Q9YIEKKGAHWVHU2T4FX.jpeg" alt="photo of past work" loading="lazy" ></div>
+                    
+                
+                
+                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/NHNKTTQL6OYYXM2A04CPO25TSDOX8ZDCOZJEQUKU.jpeg" alt="photo of past work" loading="lazy" ></div>
+                    
+                
+                
+                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/F57E9SL99K6ATRW44NFBTWCXPMG1Q4HAZ65359AN.jpeg" alt="photo of past work" loading="lazy" ></div>
+                    
+                
+                
+                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/QQCXZMDPD7KYQZO6OXM2W6GGHRSL92NLCLR0UDRJ.jpeg" alt="photo of past work" loading="lazy" ></div>
+                    
+                
+                
+                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/GW54RCH1FDFXFK9J1ZVKF4VJH8K9XSL6PY9YBXEV.jpeg" alt="photo of past work" loading="lazy" ></div>
+                    
+                
+                
+                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/T2PFZCMN9IRFK46TAEYDM54LAHIR16KVSAZ2VJZ0.jpeg" alt="photo of past work" loading="lazy" ></div>
                     
                  
                 </div>     
@@ -378,35 +402,6 @@
                     Testimonials &amp; Reviews</h5>
                 <div class="block w-full h-1 max-w-lg mt-6 bg-purple-100 rounded-full"></div>
                 <div class="items-start justify-start w-full mt-12 mb-4 lg:flex lg:flex-wrap">
-
-                    
-            
-                    <div class="flex flex-col items-center lg:items-start justify-center w-full h-auto mb-12 lg:w-1/2">
-                    <div class="flex items-center lg:items-start ">
-                        
-                        <div class="flex flex-col justify-start items-center lg:items-start ">
-                            <h4 class="font-bold  text-gray-200  ">Brett Lewis</h4>
-                            <p class=" text-gray-200 ">Homeowner</p>
-                            <div class="flex flex-row items-start ">
-                                
-                                
-                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
-                                
-                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
-                                
-                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
-                                
-                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
-                                
-                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
-                                
-                                
-                            </div>
-                            <blockquote class="mt-8 lg:pr-5 font-bold text-xl text-center lg:text-left   text-white ">"Don and his crew are my go to painters for all my projects. They are quick and clean getting my rental units ready to lease. Very professional and trustworthy."</blockquote>                           
-                        </div>
-                    </div>
-                    
-                    </div>
 
                     
             
@@ -472,7 +467,7 @@
                     <div class="flex items-center lg:items-start ">
                         
                         <div class="flex flex-col justify-start items-center lg:items-start ">
-                            <h4 class="font-bold  text-gray-200  ">Jenna Aldrich</h4>
+                            <h4 class="font-bold  text-gray-200  ">Brett Lewis</h4>
                             <p class=" text-gray-200 ">Homeowner</p>
                             <div class="flex flex-row items-start ">
                                 
@@ -489,36 +484,7 @@
                                 
                                 
                             </div>
-                            <blockquote class="mt-8 lg:pr-5 font-bold text-xl text-center lg:text-left   text-white ">"For over 10 years, Don at Clean Cut Painting has been my “go to” for home improvements. I’ve trusted him with two home renovations and countless projects and have always been extremely pleased with the results. He’s one of the few people I can recommend without exception."</blockquote>                           
-                        </div>
-                    </div>
-                    
-                    </div>
-
-                    
-            
-                    <div class="flex flex-col items-center lg:items-start justify-center w-full h-auto mb-12 lg:w-1/2">
-                    <div class="flex items-center lg:items-start ">
-                        
-                        <div class="flex flex-col justify-start items-center lg:items-start ">
-                            <h4 class="font-bold  text-gray-200  ">Kris Hancock</h4>
-                            <p class=" text-gray-200 ">Homeowner</p>
-                            <div class="flex flex-row items-start ">
-                                
-                                
-                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
-                                
-                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
-                                
-                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
-                                
-                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
-                                
-                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
-                                
-                                
-                            </div>
-                            <blockquote class="mt-8 lg:pr-5 font-bold text-xl text-center lg:text-left   text-white ">"This is the dream team. I have nothing but praise for this wonderful crew of men. Their work is perfection...and having them in your home is a pleasure. I recommend Clean Cut Painting for your painting needs."</blockquote>                           
+                            <blockquote class="mt-8 lg:pr-5 font-bold text-xl text-center lg:text-left   text-white ">"Don and his crew are my go to painters for all my projects. They are quick and clean getting my rental units ready to lease. Very professional and trustworthy."</blockquote>                           
                         </div>
                     </div>
                     
@@ -606,6 +572,64 @@
                                 
                             </div>
                             <blockquote class="mt-8 lg:pr-5 font-bold text-xl text-center lg:text-left   text-white ">"Don is an honest guy that does quality work with an affordable rate. Only place I&#x27;d call to have painting done."</blockquote>                           
+                        </div>
+                    </div>
+                    
+                    </div>
+
+                    
+            
+                    <div class="flex flex-col items-center lg:items-start justify-center w-full h-auto mb-12 lg:w-1/2">
+                    <div class="flex items-center lg:items-start ">
+                        
+                        <div class="flex flex-col justify-start items-center lg:items-start ">
+                            <h4 class="font-bold  text-gray-200  ">Jenna Aldrich</h4>
+                            <p class=" text-gray-200 ">Homeowner</p>
+                            <div class="flex flex-row items-start ">
+                                
+                                
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
+                                
+                                
+                            </div>
+                            <blockquote class="mt-8 lg:pr-5 font-bold text-xl text-center lg:text-left   text-white ">"For over 10 years, Don at Clean Cut Painting has been my “go to” for home improvements. I’ve trusted him with two home renovations and countless projects and have always been extremely pleased with the results. He’s one of the few people I can recommend without exception."</blockquote>                           
+                        </div>
+                    </div>
+                    
+                    </div>
+
+                    
+            
+                    <div class="flex flex-col items-center lg:items-start justify-center w-full h-auto mb-12 lg:w-1/2">
+                    <div class="flex items-center lg:items-start ">
+                        
+                        <div class="flex flex-col justify-start items-center lg:items-start ">
+                            <h4 class="font-bold  text-gray-200  ">Kris Hancock</h4>
+                            <p class=" text-gray-200 ">Homeowner</p>
+                            <div class="flex flex-row items-start ">
+                                
+                                
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
+                                
+                                
+                            </div>
+                            <blockquote class="mt-8 lg:pr-5 font-bold text-xl text-center lg:text-left   text-white ">"This is the dream team. I have nothing but praise for this wonderful crew of men. Their work is perfection...and having them in your home is a pleasure. I recommend Clean Cut Painting for your painting needs."</blockquote>                           
                         </div>
                     </div>
                     
